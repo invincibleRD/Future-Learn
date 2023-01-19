@@ -1,0 +1,79 @@
+<!-- Navbar -->
+<nav id="hi" class="navbar navbar-expand-lg navbar-icon-top  navbar-light bg-light">
+  <a class="navbar-brand" routerLink="">
+    <h2><b>Future Learn </b></h2>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="">
+          <i class="fa fa-home"></i>
+          Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="course">
+          <i class="fa fa-book"></i>
+          Courses
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">
+          <i class="fa fa-info"></i>
+          About
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" routerLink="#">
+            <i class="fa fa-user"></i>
+            My Account
+            <span class="sr-only">(current)</span>
+          </a>
+          <ul class="dropdown-menu" >
+            <li><a class="dropdown-item" routerLink="joinnow">
+              <i class="fa-solid fa-right-to-bracket"></i> &nbsp;
+              login</a>
+            </li>
+            <li><a class="dropdown-item" routerLink="signup">
+              <i class="fa-solid fa-user-plus"></i> &nbsp;
+              Sign Up</a></li>
+            <li><a class="dropdown-item" href="#">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i> &nbsp;
+              Logout</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="inbox">
+          <i class="fa fa-envelope-o">
+            <span class="badge badge-danger">5</span>
+          </i>
+          Inbox
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="">
+          <i class="fa fa-bell">
+            <span class="badge badge-info">12</span>
+          </i>
+          Notifications
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<!-- footer -->
+<footer class="text-center mt-2">
+  <p>&copy; Future learn 2022. All right reserved</p>
+</footer>

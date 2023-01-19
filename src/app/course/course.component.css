@@ -1,0 +1,33 @@
+.course {
+  background-color: #eff6ff;
+  padding: 50px 100px;
+}
+.box {
+  background-color: #ffffff;
+  padding: 20px 20px;
+}
+.zoom {
+  transition: 0.2s all ease-in-out;
+}
+.zoom:hover {
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .course {
+    background-color: #eff6ff;
+    padding: 50px 10px;
+  }
+
+  .zoom:hover {
+    transform: scale(1);
+    
+  }
+}
+@media screen and (max-width: 1247px) {
+  .box {
+    font-size: 12px;
+  }
+}
